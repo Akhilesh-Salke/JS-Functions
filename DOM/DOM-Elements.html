@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            All DOM Element Selectors 
+        </title>
+        <script>
+            function getDomElements(){
+                var h1_DomElement = document.querySelector("h1");
+                h1_DomElement.style.color = "coral";
+
+                var p_DomElement = document.querySelectorAll("p");
+                p_DomElement[0].style.color = "orange";
+                p_DomElement[0].style.padding = "50px";
+                p_DomElement[1].style.color = "green";
+
+                var section_DomElement = document.getElementById("sectionElement");
+                section_DomElement.style.backgroundColor = "yellow";
+                section_DomElement.style.color = "black";
+                section_DomElement.style.padding = "20px";
+
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Selectors in JS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit perferendis nobis dignissimos minus dolores officiis fugiat quasi, blanditiis magni, voluptates magnam at eligendi commodi reiciendis aut expedita eaque dolore sed.
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ratione omnis, enim nesciunt repudiandae molestiae fugit ad, maiores totam, laboriosam id recusandae suscipit ut illum perferendis veniam obcaecati veritatis sunt fugiat doloremque provident aspernatur incidunt. Totam soluta, nihil fugit sequi eaque et ut illo. Saepe vitae veniam suscipit magni atque fuga inventore sed! Quis accusamus veniam voluptates aut dolor enim aliquid, non iure eveniet eius aliquam laudantium minus mollitia nobis sit unde ex quaerat repudiandae nam sint illum voluptas reprehenderit! Repellat repellendus quaerat sed voluptatem, ullam velit quas deserunt sequi quos temporibus aliquam minus dolorum, voluptatibus ratione hic tempore incidunt.
+        </p>
+
+        <section id="sectionElement">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis vel expedita quibusdam odit facere quo ipsum illo? Voluptates consequuntur dolorem ducimus consectetur atque facilis at natus incidunt fuga aliquam, sit quisquam, esse, est repellat laudantium vitae? Ex natus tempore tempora, fugiat modi quis vel ipsam molestiae veritatis necessitatibus laborum, libero, doloribus saepe eum ab consectetur quaerat tenetur sit rem incidunt suscipit unde illo sapiente! Explicabo ducimus, voluptatibus repellat possimus reprehenderit in unde vel beatae libero debitis, velit quibusdam nostrum, aspernatur voluptates doloremque sint tenetur voluptatum. Earum commodi hic voluptatem adipisci labore, inventore tempore velit amet facilis neque impedit quos officiis enim in accusantium facere nesciunt cum iure expedita? Assumenda hic nostrum magni, itaque, saepe odio at animi non vel eos aut mollitia excepturi quisquam exercitationem natus! Quae recusandae nisi cumque, veritatis velit quaerat hic sunt impedit at reiciendis harum, rem distinctio sapiente accusamus quibusdam. Obcaecati voluptatem laborum ipsam? Provident ut inventore distinctio ullam error tempora iure ea nam, illum odio minima illo amet quibusdam, perspiciatis numquam sit dolorem, ipsam maiores velit aut minus adipisci. Assumenda earum, sit dolor distinctio esse fugiat quasi atque, voluptate amet itaque nostrum voluptatibus rem iure ratione incidunt totam asperiores quia. Molestias culpa repudiandae ad voluptatem?
+        </section>
+        
+        <button onclick = "getDomElements()">Submit</button>
+    </body>
+</html>

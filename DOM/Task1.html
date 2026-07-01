@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Task-1
+        </title>
+        <script>
+            function fnShowHidePassword(){
+                var inputDOM = document.querySelector("input");
+                var buttonDOM = document.querySelector("button");
+
+                if(inputDOM.type === "password"){
+                    inputDOM.type = "text";
+                    buttonDOM.textContent = "Hide Password";
+                }else{
+                    inputDOM.type = "password";
+                    buttonDOM.textContent = "Show Password";
+                }
+            }
+        </script>
+        <style>
+            h1{
+                text-align: center;
+            }
+            input{
+                margin-right: 50px;
+                margin-left: 600px;
+            }
+            div{
+                margin-top: 50px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div>
+            <h1>Show / Hide Password</h1>
+            <input type="password" name="pwdName" id="pwdId" placeholder="enter password">
+            <button onclick="fnShowHidePassword()">Show Password</button>
+        </div>
+        
+    </body>
+</html>
